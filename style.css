@@ -58,6 +58,12 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
     width: auto;
 }
 
+.HeaderLogo_image--sp {
+    display: none;
+    height: 15px;
+    width: auto;
+}
+
 @media screen and (min-width: 768px) {
 .HeaderLogo {
     transition: opacity .2s;
@@ -438,6 +444,16 @@ p {
 /*767px*/
 
 @media screen and (max-width: 767px) {
+.Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.HeaderLogo_image--pc {
+    display: none;
+}
+.HeaderLogo_image--sp {
+    display: block;
+}
 .FirstView {
     background-color: none;
     padding-top: 0;
@@ -457,6 +473,20 @@ p {
 .FirstViewContent {
     margin-bottom: 20px;
     width: 100%;
+}
+.FirstViewContent_title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+}
+.FirstViewContent_images {
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.FirstViewContent_images img {
+    width: 27.5%;
 }
 .AboutWrapper {
     padding: 30px 0;
